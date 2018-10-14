@@ -193,7 +193,7 @@
 			<div class="WriteToAs-footer">
 				<h3> NЁRDS DESIGN STUDIO </h3>
 				<p> 191186, Санкт-Петербург,  ул. Б. Конюшенная, д. 19/8 <br><br> тел. +7 (812) 275-75-75 </p>
-				<a class="button red-button" href="#"> 
+				<a class="button red-button button-write" href="write.html"> 
                 	НАПИШИТЕ НАМ
                 </a>
 			</div> 
@@ -219,7 +219,7 @@
 		</div>
 	</footer>
 
-<!-- 	<section class="modal modal-writeus">
+	<section class="modal modal-writeus">
 		<h2>Напиши нам</h2>
 		<form class="login-form" action="#" method="post">
 			<div class="up-form-modal">
@@ -243,8 +243,8 @@
                 			Отправить
             </a>
 		</form>
-		<button class="modal-close" type="button"></button>
-	</section> -->
+		<button class="modal-close" type="button">Закрыть</button>
+	</section>
 
 
 <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
@@ -257,6 +257,25 @@
      	 $('.your-class').slick({dots: true, appendDots: $('.dots-class')});
     	});
   </script>
+  
+	<script > 
+	var link = document.querySelector(".button-write")
+	// var popup = document.querySelector(".modal-close");
+	var close = document.querySelector(".modal-close");
+
+	link.addEventListener("click", function (evt) {
+		evt.preventDefault();
+	popup.classList.add("modal-show");
+});
+
+	var close = document.querySelector(".modal-close");
+
+	close.addEventListener("click", function (evt) {
+		evt.preventDefault();
+		popup.classList.remove("modal-show");
+	});
+	</script>
+
 </body>
 </html>	
 
